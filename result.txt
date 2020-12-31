@@ -1,0 +1,44 @@
+lno@50 @0  statement   children: [@1 @2 @6 ]      function: int func
+lno@50 @1  declaration children: []               decl: int ret  
+lno@51 @2  function_callchildren: [@3 @4 ]         function_call: 
+lno@51 @3  expression  children: []               expr: string %d
+lno@51 @4  op          children: [@5 ]            op: TADDR
+lno@51 @5  expression  children: []               expr: int ret
+lno@52 @6  statement   children: [@7 ]            stmt: return
+lno@52 @7  expression  children: []               expr: int ret
+lno@61 @8  statement   children: [@9 @12 @14 @16 @35 @38 ]  function: int main
+lno@61 @9  declaration children: [@10 ]           decl: int i  
+lno@61 @10 function_callchildren: [@11 ]           function_call: 
+lno@61 @11 statement   children: []               empty: 
+lno@62 @12 declaration children: [@13 ]           decl: int result  
+lno@62 @13 expression  children: []               expr: int 1
+lno@63 @14 declaration children: [@15 ]           decl: int j  
+lno@63 @15 expression  children: []               expr: int 1
+lno@64 @16 statement   children: [@17 @20 @24 @29 ]  stmt: for
+lno@64 @17 op          children: [@18 @19 ]       op: ASSIGN
+lno@64 @18 expression  children: []               expr: int 1
+lno@64 @19 expression  children: []               expr: int j
+lno@64 @20 op          children: [@21 ]           op: BOOL
+lno@64 @21 op          children: [@22 @23 ]       op: SEQ
+lno@64 @22 expression  children: []               expr: int j
+lno@64 @23 expression  children: []               expr: int i
+lno@64 @24 op          children: [@25 @28 ]       op: ASSIGN
+lno@64 @25 op          children: [@26 @27 ]       op: ADD
+lno@64 @26 expression  children: []               expr: int j
+lno@64 @27 expression  children: []               expr: int 1
+lno@64 @28 expression  children: []               expr: int j
+lno@65 @29 statement   children: [@30 ]           stmt: LB_SCOPE
+lno@65 @30 op          children: [@31 @34 ]       op: ASSIGN
+lno@65 @31 op          children: [@32 @33 ]       op: MULT
+lno@65 @32 expression  children: []               expr: int result
+lno@65 @33 expression  children: []               expr: int j
+lno@65 @34 expression  children: []               expr: int result
+lno@68 @35 function_callchildren: [@36 @37 ]       function_call: 
+lno@68 @36 expression  children: []               expr: string %d\n
+lno@68 @37 expression  children: []               expr: int result
+lno@69 @38 statement   children: [@39 ]           stmt: return
+lno@69 @39 expression  children: []               expr: int 0
+i:0 0    result:0 1    j:0 2    main:0 3    
+
+ret:2 0    func:2 1    
+

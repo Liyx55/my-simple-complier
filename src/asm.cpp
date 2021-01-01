@@ -864,7 +864,7 @@ void generateASM()
         of << "\t.string\t\"" << i.first->value << "\"\n";
     }
 
-    putLine(".text");
+    putLine(".text");//换行输出
 
     handleCodeBlock(root);
 

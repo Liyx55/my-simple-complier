@@ -41,30 +41,56 @@
 // 	return 0;
 // }
 
-// //check 6
-// void main(){
-// 	return 0;
-// }
-
-int func() {
-  int ret;
-  scanf("%d",&ret);
-  return ret;
-}
+// // //check 6
+// // void main(){
+// // 	return 0;
+// // }
 
 // int func() {
-//   int ret = 8;
+//   int ret;
+//   scanf("%d",&ret);
 //   return ret;
 // }
 
-int main() {
-    int i = func();
-    int result = 1;
-    int j = 1;
-    for (j=1; j <= i; j=j+1) {
-        result = result * j;
-    }
+// // int func() {
+// //   int ret = 8;
+// //   return ret;
+// // }
 
-    printf("%d\n",result);
-    return 0;
+// int main() {
+//     int i = func();
+//     int result = 1;
+//     int j = 1;
+//     for (j=1; j <= i; j=j+1) {
+//         result = result * j;
+//     }
+
+//     printf("%d\n",result);
+//     return 0;
+// }
+// int main(){
+//     for(int i=0;i<10;i=i+1){
+//         printf("%d\n",i);
+//         if(i<5){
+//             printf("Continue\n");
+//             continue;
+//         }
+//         break;
+//     }
+//     return 0;
+// }
+int fact(int n) {
+  if (n == 0) {
+    return 1;
+  }
+  int nn;
+  nn = n-1;
+  return (n * fact(nn));
+}
+
+int main() {
+  int n;
+  n = 4;
+  printf("%d\n",fact(n));
+  return 0;
 }
